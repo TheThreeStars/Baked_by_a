@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -37,13 +39,139 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <!-- <div class="hero-section">
-        <img src="images/cupcakes.png" alt="Cupcakes" class="img-fluid hero-image">
-        <div class="hero-text">
-            <h1>Delicious cakes, locally made with love</h1>
+    <!-- Cakes gallery -->
+    <div class="container text-center mt-5">
+        <h1>Cakes</h1>
+        
+        <!-- Category Buttons -->
+        <div class="category-container">
+            <div class="mt-4">
+                <button class="category-btn" onclick="filterCakes('all')">
+                    <p class="category-title">All Cakes</p> <!-- Title under the image -->
+                </button>
+                <button class="category-btn" onclick="filterCakes('indulgence')">
+                    <p class="category-title">Little Indulgence</p> <!-- Title under the image -->
+                </button>
+                <button class="category-btn" onclick="filterCakes('perfection')">
+                    <p class="category-title">Petite Perfection</p> <!-- Title under the image -->
+                </button>
+                <button class="category-btn" onclick="filterCakes('delights')">
+                    <p class="category-title">Gathering Delights</p> <!-- Title under the image -->
+                </button>
+            </div>
         </div>
-    </div> -->
+        
+
+        <!-- Cake Items -->
+        <div class="row mt-5">
+            <!-- Little Indulgence Cakes -->
+            <div class="col-md-4 cake-card indulgence">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Vanilla Whispers" class="card-img-top">
+                    <div class="card-body">
+                        Vanilla Whispers (12)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cake-card indulgence">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Velvet Dream" class="card-img-top">
+                    <div class="card-body">
+                        Velvet Dream (12)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cake-card indulgence">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Choco Loco" class="card-img-top">
+                    <div class="card-body">
+                        Choco Loco (12)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cake-card indulgence">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Velvet Dream" class="card-img-top">
+                    <div class="card-body">
+                        Carrot Joy Bites (12)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cake-card indulgence">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Velvet Dream" class="card-img-top">
+                    <div class="card-body">
+                        Choco Bliss (12)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cake-card indulgence">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Velvet Dream" class="card-img-top">
+                    <div class="card-body">
+                        Marble Magic Cookie
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Petite Perfection Cakes -->
+            <div class="col-md-4 cake-card perfection">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Choco Luxe" class="card-img-top">
+                    <div class="card-body">
+                        Choco Luxe
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cake-card perfection">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Carrot Cake" class="card-img-top">
+                    <div class="card-body">
+                        Carrot Cake to Go
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cake-card perfection">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Carrot Cake" class="card-img-top">
+                    <div class="card-body">
+                       Heartfelt Velvet
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Gathering Delights Cakes -->
+            <div class="col-md-4 cake-card delights">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Valentines Velvet" class="card-img-top">
+                    <div class="card-body">
+                        Valentines Velvet
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cake-card delights">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Carrot Cake" class="card-img-top">
+                    <div class="card-body">
+                        Midnight Chocolate
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cake-card delights">
+                <div class="card">
+                    <img src="https://i.postimg.cc/DfPwgk3r/IMG-20241126-WA0151.jpg" alt="Carrot and Walnut" class="card-img-top">
+                    <div class="card-body">
+                        Carrot and Walnut Wonderland
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="text-center mt-5 py-3 bg-light">
+            <p>© 2024 Baked by A | Designed by TheThreeStars</p>
+        </footer>
+    
 
     <script src="/script/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
