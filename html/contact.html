@@ -12,41 +12,107 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-brown">
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-            <!-- Left Side - Nav Links -->
-            <div class="d-flex align-items-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/html/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/html/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/html/store.html">Store</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/html/contact.html">Contact</a></li>
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Baked by A</a>
+            
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/contact.html">Contact</a>
+                    </li>
                 </ul>
-            </div>
     
-            <!-- Center - Title -->
-            <div class="title-center flex-grow-1">
-                <a class="navbar-brand" href="index.html">Baked by A</a>
-            </div>
-    
-            <!-- Right Side - Social Icons -->
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <!-- Social Icons (will be hidden in mobile view) -->
+                <div class="d-none d-lg-flex ms-3">
+                    <a href="https://www.instagram.com/_baked_by_a?igsh=dHprbzhmaWpoMDgx" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@_baked_by_a?_t=8sBXp9ELHE6&_r=1" class="social-icon me-2"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/message/RQQ3WN3WO3O2I1" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <!-- <div class="hero-section">
-        <img src="images/cupcakes.png" alt="Cupcakes" class="img-fluid hero-image">
-        <div class="hero-text">
-            <h1>Delicious cakes, locally made with love</h1>
+<!-- form -->
+<div class="contact-page-wrapper">
+    <div class="contact-heading"> 
+        <div class="contact-title">
+            <h2>Chat to us!</h2>
         </div>
-    </div> -->
-    <footer class="text-center mt-5 py-3 bg-light">
-        <p>© 2024 Baked by A | Designed by TheThreeStars</p>
-    </footer>
+        <p>Have questions about our cakes, special requests, or just want to say hello?<br> Fill out the form below, and we’ll get back to you as soon as possible. </p>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="form">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Your Name" required>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Your Email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <input id="submit" type="submit" value="Send Message">
+    </form>
+</div>
+
+
+   <!-- footer -->
+   <footer class="custom-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center text-md-start footer-brand">
+                <img src="https://i.postimg.cc/SK3sDYhr/bakedbya-logo-photoaidcom-cropped-2.png" alt="Baked by A Logo" class="footer-logo" />
+                <div class="footer-text">
+                    <h2><b>Baked by A</b></h2>
+                    <p>Homemade Bakes</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <ul class="footer-links list-unstyled">
+                    <p><b>Helpful Links</b></p>
+                    <li><a href="/html/index.html">Home</a></li>
+                    <li><a href="/html/about.html">About</a></li>
+                    <li><a href="/html/store.html">Our Store</a></li>
+                    <li><a href="/html/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <p><b>Contact Us</b></p>
+                <p>bak3dbya@gmail.com</p>
+                <p>(+27) 81 014 5517</p>
+                <div class="social-iconss">
+                    <a href="https://www.instagram.com/_baked_by_a?igsh=dHprbzhmaWpoMDgx" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@_baked_by_a?_t=8sBXp9ELHE6&_r=1" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/message/RQQ3WN3WO3O2I1" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>© 2024 Baked by A | Designed by TheThreeStars</p>
+        </div>
+    </div>
+</footer>
 
     <script src="/script/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

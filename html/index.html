@@ -7,52 +7,206 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-brown">
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-            <!-- Left Side - Nav Links -->
-            <div class="d-flex align-items-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/html/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/html/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/html/store.html">Store</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/html/contact.html">Contact</a></li>
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Baked by A</a>
+            
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/contact.html">Contact</a>
+                    </li>
                 </ul>
-            </div>
     
-            <!-- Center - Title -->
-            <div class="title-center flex-grow-1">
-                <a class="navbar-brand" href="index.html">Baked by A</a>
-            </div>
-    
-            <!-- Right Side - Social Icons -->
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <!-- Social Icons (will be hidden in mobile view) -->
+                <div class="d-none d-lg-flex ms-3">
+                    <a href="https://www.instagram.com/_baked_by_a?igsh=dHprbzhmaWpoMDgx" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@_baked_by_a?_t=8sBXp9ELHE6&_r=1" class="social-icon me-2"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/message/RQQ3WN3WO3O2I1" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
     </nav>
     
     
+
+    <div class="hero-section">
+        <div class="hero-container">
+          <img src="https://i.postimg.cc/25BDdfnL/IMG-20241126-WA00100.jpg" alt="Delicious cupcakes" class="hero-image">
+          <div class="hero-text">
+            <h1>Delicious cakes,<br> locally made with love</h1>
+          </div>
+        </div>
+    </div>
+    <section class="Sweet-Combos">
+        <h2>Sweet Combos</h2><br><br>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/9Qfhg9H9/asma-cake1.jpg" alt="Cupcakes">
+                <h3 class="item-title">Holiday Edit</h3>
+                <button class="contact-btn" onclick="window.location.href='/html/contact.html'">Contact Me</button>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/TwMBxLFC/asmacake-2.jpg" alt="Cookies">
+                <h3 class="item-title">Holiday Edit</h3>
+                <button class="contact-btn" onclick="window.location.href='/html/contact.html'">Contact Me</button>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/GpYSX3tY/asma-cookie.jpg" alt="Cookies in a box">
+                <h3 class="item-title">Holiday Edit</h3>
+                <button class="contact-btn" onclick="window.location.href='/html/contact.html'">Contact Me</button>
+            </div>
+        </div>
+    </section>
+    
+    <br>
+
+    <div class="container mt-lg-5">
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Review 1 -->
+            <div class="carousel-item active">
+                <div class="review-block">
+                    <h3>"Shukran so much for the amazing lunch box cake! <br> My dad loved it for Father's Day- <br> it tasted delicious and looked great."</h3>
+                    <h6>- Amara</h6>
+                  </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="carousel-item">
+                <div class="review-block">
+                    <h3>"I am so happy with what I have ordered from you. <br> I've ordered multiple times and I rate it 10/10. <br> I'm overjoyed with the service."</h3>
+                    <h6>- Ruqayah</h6>
+                </div>
+          </div>
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container2 my-5">
+        <div class="row g-4 justify-content-center">
+            <h2>Baked With Love</h2><br><br>
+
+            <!-- Row 1 -->
+            <div class="col-md-2 col-6">
+                <div class="block text-block">Follow Us <br> @baked_by_A</div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="block"><img src="https://i.postimg.cc/fTWFxsf8/IMG-20241126-WA0098.jpg" alt="Image 1"></div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="block"><img src="https://i.postimg.cc/prss09Jq/IMG-20241126-WA0150.jpg" alt="Image 2"></div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="block"><img src="https://i.postimg.cc/nLqTyS1s/IMG-20241126-WA0141.jpg" alt="Image 3"></div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="block"><img src="https://i.postimg.cc/VsK4PCXF/IMG-20241126-WA0140.jpg" alt="Image 4"></div>
+            </div>
+           
+                <!-- Row 2 -->
+                <div class="col-md-2 col-6">
+                    <div class="block"><img src="https://i.postimg.cc/9Qfhg9H9/asma-cake1.jpg" alt="Image 5"></div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="block"><img src="https://i.postimg.cc/k5CWbJx4/IMG-20241126-WA0118.jpg" alt="Image 5"></div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="block"><img src="https://i.postimg.cc/vH6n2ghT/IMG-20241126-WA0115.jpg" alt="Image 6"></div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="block"><img src="https://i.postimg.cc/8cf7Y9h9/IMG-20241126-WA0099.jpg" alt="Image 7"></div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="block"><img src="https://i.postimg.cc/FKPgXtLH/IMG-20241126-WA0116.jpg" alt="Image 8"></div>
+                </div>
+            
+        </div>
     
 
-    <!-- Hero Section -->
-    <!-- <div class="hero-section">
-        <img src="https://i.postimg.cc/J4cp95pD/IMG-20241126-WA00100.jpg" alt="Cupcakes" class="img-fluid hero-image">
-        <div class="hero-text">
-            <h1>Delicious cakes, locally made with love</h1>
+    </div>
+
+    
+
+<!-- footer -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start footer-brand">
+                    <img src="https://i.postimg.cc/SK3sDYhr/bakedbya-logo-photoaidcom-cropped-2.png" alt="Baked by A Logo" class="footer-logo" />
+                    <div class="footer-text">
+                        <h2><b>Baked by A</b></h2>
+                        <p>Homemade Bakes</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="footer-links list-unstyled">
+                        <p><b>Helpful Links</b></p>
+                        <li><a href="/html/index.html">Home</a></li>
+                        <li><a href="/html/about.html">About</a></li>
+                        <li><a href="/html/store.html">Our Store</a></li>
+                        <li><a href="/html/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p><b>Contact Us</b></p>
+                    <p>bak3dbya@gmail.com</p>
+                    <p>(+27) 81 014 5517</p>
+                    <div class="social-iconss">
+                        <a href="https://www.instagram.com/_baked_by_a?igsh=dHprbzhmaWpoMDgx" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@_baked_by_a?_t=8sBXp9ELHE6&_r=1" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/message/RQQ3WN3WO3O2I1" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>© 2024 Baked by A | Designed by TheThreeStars</p>
+            </div>
         </div>
-    </div> -->
-
-
-    <footer class="text-center mt-5 py-3 bg-light">
-        <p>© 2024 Baked by A | Designed by TheThreeStars</p>
     </footer>
+    
 
     <script src="/script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

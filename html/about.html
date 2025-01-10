@@ -7,47 +7,118 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-brown">
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-            <!-- Left Side - Nav Links -->
-            <div class="d-flex align-items-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/html/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/html/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/html/store.html">Store</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/html/contact.html">Contact</a></li>
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Baked by A</a>
+            
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/contact.html">Contact</a>
+                    </li>
                 </ul>
-            </div>
     
-            <!-- Center - Title -->
-            <div class="title-center flex-grow-1">
-                <a class="navbar-brand" href="index.html">Baked by A</a>
-            </div>
-    
-            <!-- Right Side - Social Icons -->
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <!-- Social Icons (will be hidden in mobile view) -->
+                <div class="d-none d-lg-flex ms-3">
+                    <a href="https://www.instagram.com/_baked_by_a?igsh=dHprbzhmaWpoMDgx" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@_baked_by_a?_t=8sBXp9ELHE6&_r=1" class="social-icon me-2"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/message/RQQ3WN3WO3O2I1" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <!-- <div class="hero-section">
-        <img src="images/cupcakes.png" alt="Cupcakes" class="img-fluid hero-image">
-        <div class="hero-text">
-            <h1>Delicious cakes, locally made with love</h1>
+    <section class="about">
+        <div class="container-about">
+          <div class="about-image">
+            <div class="profile-pic">
+              <img src="https://i.postimg.cc/7Y5DxSfn/asma-aboutimg.jpg" alt="Profile Picture">
+            </div>
+          </div>
+          <br>
+          <div class="about-text">
+            <h4>From Asmaa’s Kitchen</h4>
+            <h1>To the world of Baked by A</h1>
+            <p>
+              Baking has always been woven into the fabric of my life. From the age of 11, I found myself drawn to the kitchen, learning alongside my mom and granny as we mixed, measured, and experimented with flavors. It didn’t take long for me to fall in love with the art of baking, and before I knew it, my carrot and walnut cake became a beloved centerpiece at family celebrations.
+            </p>
+            <p>
+              As I grew older, I realized my passion for baking could become something more. Determined to take the next step, I began baking to earn pocket money, with my signature carrot and walnut cake leading the way in my budding venture.
+            </p>
+            <p>
+              In 2020, Baked by A was born. With the unwavering support of my family and friends, I’ve been able to expand my range of baked goods and continuously refine my craft. My commitment is to create products that deliver both quality and satisfaction, ensuring that every customer returns for more.
+            </p>
+          </div>
         </div>
-    </div> -->
+      </section>
+      
+      
 
-    <footer class="text-center mt-5 py-3 bg-light">
-        <p>© 2024 Baked by A | Designed by TheThreeStars</p>
-    </footer>
+ <!-- footer -->
+ <footer class="custom-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center text-md-start footer-brand">
+                <img src="https://i.postimg.cc/SK3sDYhr/bakedbya-logo-photoaidcom-cropped-2.png" alt="Baked by A Logo" class="footer-logo" />
+                <div class="footer-text">
+                    <h2><b>Baked by A</b></h2>
+                    <p>Homemade Bakes</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <ul class="footer-links list-unstyled">
+                    <p><b>Helpful Links</b></p>
+                    <li><a href="/html/index.html">Home</a></li>
+                    <li><a href="/html/about.html">About</a></li>
+                    <li><a href="/html/store.html">Our Store</a></li>
+                    <li><a href="/html/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <p><b>Contact Us</b></p>
+                <p>bak3dbya@gmail.com</p>
+                <p>(+27) 81 014 5517</p>
+                <div class="social-iconss">
+                    <a href="https://www.instagram.com/_baked_by_a?igsh=dHprbzhmaWpoMDgx" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@_baked_by_a?_t=8sBXp9ELHE6&_r=1" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/message/RQQ3WN3WO3O2I1" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>© 2024 Baked by A | Designed by TheThreeStars</p>
+        </div>
+    </div>
+</footer>
 
     <script src="/script/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
