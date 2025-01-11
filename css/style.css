@@ -479,6 +479,31 @@ body {
     }
 }
 
+@media (max-width: 320px) {
+    /* Adjust container for very small screens */
+    .category-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        gap: 6px; /* Reduce gap between buttons */
+    }
+
+    .category-btn {
+        padding: 5px 10px; /* Compact padding for buttons */
+        margin: 3px; /* Smaller margins to fit the layout */
+        width: auto; /* Avoid stretching */
+        min-width: 80px; /* Reduce minimum width for smaller screens */
+        font-size: 0.8rem; /* Smaller font for buttons */
+    }
+
+    .cakes-title h1 {
+        font-size: 1.5rem; /* Further reduce title size */
+        text-align: center; /* Center-align title for better fit */
+        margin: 8px 0; /* Compact margins around the title */
+    }
+}
+
+
 
 /* cake cards */
 .cake-card .card {
