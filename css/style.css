@@ -667,6 +667,25 @@ body {
     text-align: left;
 }
 
+/* Center logo and heading for mobile screens (320px width) */
+@media (max-width: 425px) {
+    .footer-brand {
+        flex-direction: column; /* Stack the logo and text vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .footer-text h2,
+    .footer-text p {
+        text-align: center; /* Ensure heading and subtext are centered */
+    }
+
+    .footer-logo {
+        margin: 0 auto 10px auto; /* Center the logo with margin below */
+    }
+}
+
+
 /* contact page */
 
 .contact-page-wrapper {
