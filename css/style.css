@@ -304,9 +304,12 @@ body {
   .carousel-inner {
     padding: 10px;
   }
+
+  /* GRID LAYOUT */
+
   .block {
-    width: 100%;
-    height: 180px;
+    width: 100%; /* Automatically adjust to grid column width */
+    height: 180px; /* Uniform height for all blocks */
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -315,10 +318,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f4f4f4;
 }
+
 .block img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures images fill the block evenly */
 }
 .text-block {
     font-size: 1.8rem;
@@ -327,10 +331,8 @@ body {
     text-align: center;
     background-color: #ffd699; /* Light orange for text block */
 }
-.container my-5 {
-    max-width: 95%; /* Expand container to take more width */
-}
-.container2 h2{
+
+.container2 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     font-family: 'Playfair Display', serif;
@@ -339,7 +341,17 @@ body {
     text-align: center;
     justify-content: center;
     padding: 2rem 1rem;
-  }
+}
+.container2 {
+    max-width: 95%; /* Adjust the width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1rem; /* Add padding to avoid touching edges */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 1rem; /* Even spacing between grid items */
+}
+
 @media (max-width: 768px) {
     .hero-text h1 {
         font-size: 2.5rem;
